@@ -1,0 +1,66 @@
+body {
+  background-image: url("./images/cafe1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img1 {
+  margin-top: -70px;
+  margin-left: 240px;
+}
+
+.div1 {
+  border: 4px solid black;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 130px;
+  background: linear-gradient(
+    to right,
+    rgba(192, 161, 77, 0.1),
+    rgba(192, 161, 77, 0.6)
+  );
+}
+table {
+  padding: 50px;
+}
+table td {
+  padding: 10px;
+}
+#btn-1 {
+  margin-left: 120%;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+}
+#btn-1:hover {
+  color: white;
+  background: rgb(105, 105, 105);
+}
+label {
+  color: white;
+  font-size: 20px;
+}
+input {
+  text-decoration: none;
+  width: 280px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#forgetPass {
+  padding-left: 420px;
+  font-size: 20px;
+}
+#forgetPass a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#forgetPass a:hover {
+  text-decoration: underline;
+  color: lightslategray;
+}

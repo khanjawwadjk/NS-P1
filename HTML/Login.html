@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./Login.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="div1">
+      <img src="./images//user3.png" alt="image 1" id="img1" height="100px" />
+      <form action="Home.html">
+        <table>
+          <tr>
+            <td>
+              <label for="uname"><b>UserName :</b></label>
+            </td>
+            <td>
+              <input type="text" placeholder="Enter username.." id="uname" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pass"><b>Password :</b></label>
+            </td>
+            <td>
+              <input type="password" placeholder="Enter password.." id="pass" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Sign In" id="btn-1" />
+            </td>
+          </tr>
+        </table>
+        <!---->
+        <h3 id="h1"></h3>
+        <div id="forgetPass">
+          <a href="">forget password ?</a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      let inp1 = document.getElementById("uname");
+      let inp2 = document.getElementById("pass");
+      // console.warn("input value", inp1.value);
+
+      function userDetails() {
+        inp1.addEventListener("blur", () => {
+          // console.warn(inp1.value);
+          // console.warn(inp2.value);
+          let USERNAME = (document.getElementById("h1").textContent =
+            inp1.value);
+          console.warn(USERNAME);
+          // console.log((document.getElementById("h1").innerHTML = inp1.value));
+          // sessionStorage.setItem("user", "JK");
+          // sessionStorage.setItem("user", "USE");
+        });
+      }
+    </script>
+  </body>
+</html>

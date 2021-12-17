@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navDiv {
+  background-color: rgb(44, 42, 218);
+}
+
+.head1 {
+  background-color: rgb(192, 161, 77);
+  height: 80px;
+  width: 100%;
+  position: static;
+  /* top: 20px; */
+}
+
+#navbar {
+  float: left;
+  padding: 20px;
+}
+
+#navbar a {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 30px;
+  justify-content: end;
+}
+
+#navbar a:hover {
+  border-bottom: 5px solid red;
+}
+
+/*section*/
+.sect1 {
+  /* border: 2px solid; */
+  color: white;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 60px;
+  padding: 80px;
+  padding-left: 140px;
+}
