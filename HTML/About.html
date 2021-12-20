@@ -14,29 +14,7 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style></style>
-    <script>
-      function redBlue() {
-        var pTheme1 = document.getElementById("s1");
-        var bTheme1 = document.getElementById("s2");
-        pTheme1.style = "color:red";
-        bTheme1.style = "color: blue";
-      }
 
-      function blueYellow() {
-        var pTheme2 = document.getElementById("s1");
-        var bTheme2 = document.getElementById("s2");
-        pTheme2.style = "color:blue";
-        bTheme2.style = "color: yellow";
-      }
-
-      function blackGreen() {
-        var pTheme3 = document.getElementById("s1");
-        var bTheme3 = document.getElementById("s2");
-        pTheme3.style = "color:black";
-        bTheme3.style = "color: green";
-      }
-    </script>
     <style>
       .head1 {
         position: sticky;
@@ -51,6 +29,14 @@
         font-size: 1.2rem;
         line-height: 25px;
         text-align: left;
+      }
+      #btn {
+        font-size: 30px;
+        padding: 10px;
+        margin: 20px;
+      }
+      input {
+        width: 50%;
       }
     </style>
   </head>
@@ -91,11 +77,9 @@
       sunt rerum, nam mollitia amet cupiditate cumque! Voluptatum fugiat illo
       ullam velit hic voluptate voluptatibus, obcaecati quam beatae numquam amet
       molestias sequi aliquam iure aliquid praesentium consectetur odit
-      voluptas! Laboriosam, in delectus.
+      voluptas! Laboriosam, in delectus.voluptas! Laboriosam, in delectus.
     </p>
-    <br />
-    <h1>Who Are We ??</h1>
-    <br />
+    <br /><br />
     <p id="myPara">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque
       asperiores fugiat tenetur minus, neque maiores, sapiente, quia obcaecati
@@ -110,10 +94,29 @@
       blanditiis repellendus veniam quia doloribus expedita soluta quaerat amet
       illum iste quae, sint pariatur nesciunt, sapiente deleniti rem.
     </p>
-
+    <br /><br />
+    <p id="myPara">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque
+      asperiores fugiat tenetur minus, neque maiores, sapiente, quia obcaecati
+      quam enim impedit quidem ipsam? Laboriosam suscipit quam, ea minus officia
+      aspernatur, aut earum obcaecati magnam vel accusantium fugit optio.
+      Deleniti doloribus iusto cumque nesciunt aliquid quas cum, explicabo
+      dolores dolorum aliquam. Consequuntur veritatis voluptatibus dolorem
+      expedita odit, odio fugiat non qui corrupti, aliquam est doloremque
+      blanditiis temporibus ducimus. Ipsa, placeat aliquam omnis consequatur vel
+      qui explicabo maxime aliquid numquam eligendi natus sed dignissimos totam
+      distinctio voluptate dolorum, nulla quos reiciendis temporibus! Reiciendis
+      blanditiis repellendus veniam quia doloribus expedita soluta quaerat amet
+      illum iste quae, sint pariatur nesciunt, sapiente deleniti rem.
+    </p>
+    <hr />
     <h1>
       <input type="color" id="paint" />
-      <button onclick="anyColor()">Background</button>
+      <br />
+      <button onclick="anyColor()" id="btn">
+        Select Color Change Background
+      </button>
+      <br />
     </h1>
 
     <script>

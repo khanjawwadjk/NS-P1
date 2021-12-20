@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <style>
       .head1 {
@@ -39,13 +45,15 @@
       }
     </style>
   </head>
-  <body style="background-color: rgb(172, 171, 171)">
+  <body style="background-color: rgb(255, 255, 255)" id="bodyColor">
     <header class="head1">
       <nav id="navbar">
         <a href="Home.html">Home</a>
         <a href="Menu.html">Menu</a>
         <a href="About.html">About Us</a>
         <a href="Cont.html">Contact Us</a>
+        <a href="#"><i onclick="blackColor()" class="far fa-moon"></i></a>
+        <a href="#"><i onclick="whiteColor()" class="far fa-sun"></i></a>
       </nav>
     </header>
     <h2>Address :-</h2>
@@ -55,7 +63,11 @@
         <address>
           Indian Dhaba, <br />
           Ardhapur Road, <br />
-          Nanded-MH
+          Nanded-MH.
+          <pre>
+Mail: <a href="">khanjawwad620@gmail.com</a>
+Mobile: <a href="">+918600396677</a>
+          </pre>
         </address>
       </h3>
     </div>
@@ -68,8 +80,19 @@
         height="250px"
         style="border: 0"
         allowfullscreen=""
-        loading="lazy"
       ></iframe>
     </div>
+    <script>
+      function blackColor() {
+        var bgColor = document.getElementById("bodyColor");
+        bgColor.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      }
+      function whiteColor() {
+        var bgColor = document.getElementById("bodyColor");
+        bgColor.style.backgroundColor = "white";
+        bodyColor.style.color = "black";
+      }
+    </script>
   </body>
 </html>

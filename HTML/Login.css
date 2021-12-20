@@ -62,5 +62,5 @@ input {
 
 #forgetPass a:hover {
   text-decoration: underline;
-  color: lightslategray;
+  color: rgb(255, 0, 0);
 }
