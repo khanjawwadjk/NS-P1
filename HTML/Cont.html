@@ -7,18 +7,39 @@
     <title>Contact</title>
     <link rel="stylesheet" href="./styles.css" />
     <style>
+      .head1 {
+        position: sticky;
+        top: 0;
+      }
       .footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: red;
+        height: 250px;
+        background-color: black;
         color: white;
         text-align: center;
       }
+      #map {
+        float: right;
+      }
+
+      h2 {
+        padding-left: 20px;
+        padding-top: 30px;
+        margin-bottom: -30px;
+      }
+      #div1 {
+        color: black;
+        padding: 60px;
+        line-height: 40px;
+        font-size: 20px;
+        display: flex;
+      }
     </style>
   </head>
-  <body>
+  <body style="background-color: rgb(172, 171, 171)">
     <header class="head1">
       <nav id="navbar">
         <a href="Home.html">Home</a>
@@ -27,7 +48,28 @@
         <a href="Cont.html">Contact Us</a>
       </nav>
     </header>
-    contact page
-    <div class="footer">Footer</div>
+    <h2>Address :-</h2>
+    <br />
+    <div id="div1">
+      <h3>
+        <address>
+          Indian Dhaba, <br />
+          Ardhapur Road, <br />
+          Nanded-MH
+        </address>
+      </h3>
+    </div>
+
+    <div class="footer">
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60261.28831120521!2d77.33353897910156!3d19.2679877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d087b9a15285%3A0xa5fbc9e3050e361a!2sIndian%20Dhaba!5e0!3m2!1sen!2sin!4v1639751139246!5m2!1sen!2sin"
+        width="100%"
+        height="250px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
   </body>
 </html>

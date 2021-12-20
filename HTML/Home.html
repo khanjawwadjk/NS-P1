@@ -5,48 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Smooch&family=Ubuntu:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <!--fonts-->
+    <!--icon-->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <!--fonts-->
     <link rel="stylesheet" href="./styles.css" />
 
-    <script></script>
     <style>
+      #head1 {
+        text-shadow: 0 0 20px #8b3636, 0 0 60px #922929;
+      }
+      #dhaba {
+        font-size: 90px;
+        padding-left: 140px;
+      }
+      #head6 {
+        font-size: 30px;
+        /* color: black; */
+        text-shadow: 0 0 40px #020202, 0 0 30px #000000;
+      }
+
       body {
         background-image: url("./images/table.jpg");
         background-repeat: no-repeat;
         background-size: cover;
       }
+
+      #myName {
+        color: tomato;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-shadow: 0 0 10px #865959, 0 0 30px #000000;
+      }
+      #myName::before {
+        content: "Hello,";
+      }
     </style>
   </head>
-  <body>
+  <body id="body1">
     <header class="head1">
       <nav id="navbar">
-        <a href="" onclick="history.back()"
-          ><i class="fas fa-arrow-circle-left"></i
-        ></a>
-        <a href="Login.html">Login</a>
         <a href="Home.html">Home</a>
         <a href="Menu.html">Menu</a>
         <a href="About.html">About Us</a>
         <a href="Cont.html">Contact Us</a>
       </nav>
-      <h3 id="name">Hello,</h3>
+      <h3 id="myName" style="float: right; margin: 20px">Hello,</h3>
     </header>
     <section class="sect1">
-      <h1 style="font-size: 130px">
+      <h1 id="head1" style="font-size: 130px; line-height: 0.7">
         INDIAN<br />
-        DHABA
+        <span id="dhaba">DHABA</span>
       </h1>
+
+      <h6 id="head6" style="padding-top: 50px; padding-left: 200px">
+        &nbsp;A Family Garden Restaurant,<br />
+        &nbsp;Veg & Non-Veg.
+      </h6>
     </section>
+
+    <script>
+      var userName = sessionStorage.getItem("userName");
+      console.log("name entered===>", userName);
+      document.getElementById("myName").innerText = userName
+        .replace(/"/, " ")
+        .replace(/"/, " ");
+    </script>
   </body>
 </html>

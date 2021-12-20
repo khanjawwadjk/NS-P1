@@ -14,6 +14,7 @@
   width: 100%;
   position: static;
   /* top: 20px; */
+  
 }
 
 #navbar {
@@ -32,15 +33,18 @@
 }
 
 #navbar a:hover {
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid rgb(9, 0, 131);
 }
 
 /*section*/
 .sect1 {
   /* border: 2px solid; */
-  color: white;
+  color: whitesmoke;
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 60px;
   padding: 80px;
-  padding-left: 140px;
+  padding-left: 180px;
+  margin-top: 80px;
+  margin-left: 200px;
+
 }

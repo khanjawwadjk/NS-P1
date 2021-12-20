@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="./Login.css" />
-    <style></style>
-  </head>
-  <body>
+    <style>
+     
+      #nameError, #passError{
+        color:red;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head >
+  <body action="Home.html" id="form1">
     <div class="div1">
       <img src="./images//user3.png" alt="image 1" id="img1" height="100px" />
       <form action="Home.html">
@@ -19,6 +25,7 @@
             </td>
             <td>
               <input type="text" placeholder="Enter username.." id="uname" />
+              <tr><td><td id="nameError"></td></td></tr>
             </td>
           </tr>
           <tr>
@@ -27,11 +34,12 @@
             </td>
             <td>
               <input type="password" placeholder="Enter password.." id="pass" />
+              <tr><td><td id="passError"></td></td></tr>
             </td>
           </tr>
           <tr>
             <td>
-              <input type="submit" value="Sign In" id="btn-1" />
+              <input type="submit" value="Sign In" id="btn-1" onclick="getData()" />
             </td>
           </tr>
         </table>
@@ -46,20 +54,15 @@
     <script>
       let inp1 = document.getElementById("uname");
       let inp2 = document.getElementById("pass");
-      // console.warn("input value", inp1.value);
+      
 
-      function userDetails() {
-        inp1.addEventListener("blur", () => {
-          // console.warn(inp1.value);
-          // console.warn(inp2.value);
-          let USERNAME = (document.getElementById("h1").textContent =
-            inp1.value);
-          console.warn(USERNAME);
-          // console.log((document.getElementById("h1").innerHTML = inp1.value));
-          // sessionStorage.setItem("user", "JK");
-          // sessionStorage.setItem("user", "USE");
-        });
+      function getData(){
+        var setName = sessionStorage.setItem("userName",JSON.stringify(inp1.value));
+        // var setPass = sessionStorage.setItem("password",JSON.stringify(inp2.value));
+       
       }
+      
     </script>
+    <script src="./JS//validateLogin.js"></script>
   </body>
 </html>
