@@ -7,6 +7,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
   </head>
   <style>
     .head1 {
@@ -69,6 +70,13 @@
       border: none;
       cursor: pointer;
     }
+    #searchInp{
+      padding: 15px;
+      margin: 20px;
+      margin-left: 10rem;
+      width: 60%;
+      
+    }
    
   </style>
   <body>
@@ -80,6 +88,8 @@
         <a href="Cont.html">Contact Us</a>
       </nav>
     </header>
+    <br><br>
+    <input type="text" placeholder="Search Here...." id="searchInp" onkeyup="serchProd()">
     <h2>
       <a href="" style="text-decoration: none" id="Items">Menu</a>
     </h2>
@@ -89,7 +99,7 @@
           src="./images//roti1.jpg"
           alt="roti"
           width="300px"
-          height="300px"
+          height="300px" 
         />
         <hr />
         <h3 style="text-align: center">Roti</h3>
@@ -218,6 +228,18 @@
       <script>
         function order(){
           alert("Added Successfully !!");
+        }
+        //
+        function serchProd(){
+          $(document).ready(function(){
+            $("#searchInp").on("keyup", function(){
+              var val = $(this).val().toLowerCase();
+              $("#card1 *").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(val) > -1)
+              })
+            })
+          })
+
         }
       </script>
    
